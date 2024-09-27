@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h2 id="text">Amit Dhyani</h2>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    const changeText = function(){
+        document.querySelector('#text').innerHTML = "Dabbi Don";
+    };
+
+    const changeME = setTimeout(changeText, 2000);
+
+    document.querySelector('#stop').
+    addEventListener('click', function(){
+        clearTimeout(changeME);
+    });
+
+</script>
+
+</html>
+

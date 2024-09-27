@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+    <title>Async Part-2</title>
+</head>
+<body>
+    <div id="time"></div>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+</body>
+
+<script>
+    const time = document.getElementById('time');
+
+    const timeControl = setInterval(function(){
+        const date = new Date();
+        time.innerHTML = date.toLocaleTimeString();
+    }, 1000);
+
+    document.getElementById('stop').addEventListener('click', () => {
+        clearInterval(timeControl);
+    });
+
+    document.getElementById('start').addEventListener('click', () => {
+        setInterval(function(){
+            time.innerHTML = new Date().toLocaleTimeString();
+        },1000);
+    });
+
+
+
+
+</script>
+</html>

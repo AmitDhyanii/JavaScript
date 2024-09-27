@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 100vh;
+            margin: 60px;
+        }
+        input{
+            outline: none;
+        }
+        .styled-input {
+            padding: 12px 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            width: 250px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .focused {
+            border-color: #007BFF;
+            background-color: #e9f5ff;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, est veniam earum cupiditate nemo quod rerum ex voluptas ducimus voluptatibus tenetur laudantium, blanditiis incidunt quis sint sed in. Ipsum, iure!</p>
+    <!-- <button onclick="handle()">Click Me</button> -->
+     <!-- <button id="button">Click Me</button> -->
+     <!-- <input type="text" id="myInput"> -->
+      <input type="text" placeholder="Focus on me" class="styled-input" id="myInput">
+
+</body>
+
+<script>
+    // function handle(){
+    //     alert('button was clicked');
+    // }
+
+    // function hide(){
+    //     const para = document.getElementById('para');
+    //     const button = document.getElementById('button');
+    //     button.addEventListener('click', () => {
+    //         if(para.style.display != 'none'){
+    //             para.style.display ='none';
+    //         }
+    //         else{
+    //             para.style.display = 'block';
+    //         }
+    //     })
+    // }
+    // hide();
+
+    // document.getElementById('myInput')
+    // .addEventListener('change', () => {
+    //     alert('Input value changed');
+    // });
+
+    const inputField = document.getElementById("myInput");
+
+    inputField.addEventListener("focus", function() {
+        inputField.classList.add("focused");
+    });
+
+    inputField.addEventListener("blur", function() {
+        inputField.classList.remove("focused");
+    });
+</script>
+</html>
