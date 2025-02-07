@@ -20,3 +20,16 @@ console.log(typeof age);
 console.log(typeof undefined);  // undefined
 console.log(typeof null);  // object
 console.log(typeof boolean);  // undefined
+
+// Another way of finding datatype of variables
+
+console.log(typeof(name));
+console.log(typeof(age));
+console.log(typeof(undefined));
+console.log(typeof(null));
+console.log(typeof(boolean));
+
+
+
+
+
