@@ -16,7 +16,7 @@ console.log(ad);
 
 // destructure in react
 const navbar = ({company}) => {}
-navbar(company="Lawlwss");
+navbar(company="LawLess");
 
 
 
