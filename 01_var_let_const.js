@@ -26,4 +26,12 @@ function sum (a ,b){
 sum(3,4);  // 7
 
 
+// multiply2(11);  give error
+var multiply2 = function(x){
+    console.log(x*2);
+}
+multiply2(11);  // 22
+
+
+
 
