@@ -16,8 +16,8 @@ const user = {
 
 
 // function chai(){
-//     console.log(this);
-//     console.log(this.username);
+    // console.log(this);
+    // console.log(this.username);
 // }
 // chai();
 
