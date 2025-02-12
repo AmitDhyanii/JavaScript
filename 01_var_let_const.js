@@ -33,5 +33,22 @@ var multiply2 = function(x){
 multiply2(11);  // 22
 
 
+// swap two numbers
 
+let a = 12;  //5
+let b = 9;   //3
+a = a + b;  // 8
+b = a - b;  // 3
+a = a - b;  // 5
+console.log(a);
+console.log(b);
+
+
+// let a = 4;
+// let b = 7;
+// a = a ^ b;
+// b = a ^ b;
+// a = a ^ b;
+// console.log(a);
+// console.log(b);
 
