@@ -57,10 +57,11 @@ const arr = [
 const sum = nums.reduce ( (acc, curr) => acc + curr, 0);
 console.log(sum);
 
+const max = nums.reduce((acc, curr) => curr>acc ? curr : acc, 0);
+console.log(max);
+
 const priceToPay = arr.reduce( (acc, item) => acc + item.price, 0);
 console.log(priceToPay);
-
-
 
 
 
