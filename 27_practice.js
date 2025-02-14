@@ -5,8 +5,9 @@
 //     setTimeout(() => {
 //         console.log('async task 1 completed');
 //         resolve();
-//     })
-// }).then(() => {
+//     }, 1000)
+// })
+// .then(() => {
 //     console.log('promise 1 resolved');
 // });
 
@@ -15,9 +16,34 @@
 //     setTimeout(() => {
 //         resolve({username:"Amit", age:23, address: "Dharuhera"});
 //     }, 1000);
-// }).then((users) => {
+// })
+// .then((users) => {
 //     console.log(users);
 // });
+
+
+
+// new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve([{username:"Amit Dhyani", age:23},{username:"LawLess Gaming", age:33}]);
+//     },1000)
+// })
+//.then((users)=>{
+//     console.log(users[1].username)
+// })
+
+
+
+// new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve([{username:"Amit Dhyani", age:23},{username:"LawLess Gaming", age:33}]);
+//     },1000)
+// })
+// .then((users)=>{
+//     users.forEach((user)=>{
+//         console.log(user.username);
+//     }) 
+// })
 
 
 
@@ -25,10 +51,12 @@
 //     setTimeout(() => {
 //         resolve({username: "Amit dhyani", age:23, adress: "Dharuhera"});
 //     }, 1000);
-// }).then((user) => {
+// })
+// .then((user) => {
 //     console.log(user);
 //     return user.username;
-// }).then((username) => {
+// })
+// .then((username) => {
 //     console.log(username);
 // })
 
@@ -264,6 +292,10 @@
 
 
 // onClick, onChange, onFocus, onBlur
+
+
+
+
 
 
 
