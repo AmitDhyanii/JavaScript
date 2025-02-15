@@ -126,10 +126,30 @@
 // practice();
 
 
+// async function practice(){
+//     try
+//     {
+//         const response = await fetch('https://api.escuelajs.co/api/v1/products');
+//         if(!response.ok)
+//         {
+//             console.log('Network response was not ok');
+//             return;
+//         }
+//         const data = await response.json();
+//         console.log(data);
+//     }
+//     catch(error)
+//     {
+//         console.log('OOPS ERROR', error.message);
+//     }
+// };
+// practice();
+
+
 // fetch('https://api.escuelajs.co/api/v1/products')
 // .then((response) => response.json())
 // .then((data) => console.log(data))
-// .catch((error) => console.log(error));
+// .catch((error) => console.log(error.message));
 
 
 // hoisting var, let, const
