@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #606060;
+            color: ghostwhite;
+        }
+        h1{
+            height: 200px;
+            width: 200px;
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        button{
+            margin-left: 4.8rem;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1></h1>
+    <button>ON</button>
+</body>
+
+<script>
+    // 4 pillars of DOM
+
+    // 1. selection of an element
+    // 2. changing HTML
+    // 3. changing CSS
+    // 4. Event Listener
+
+    // selection
+    // let h1 = document.querySelector('h1');
+
+    // changing html
+    // h1.innerHTML = "Hey it's me goku";
+    // h1.textContent = "hello there"
+    // h1.innerText = "hey brother"
+
+    // changing css
+    // h1.style.color = "black"
+    // h1.style.backgroundColor = "#909090"
+    // h1.style.padding = "13px"
+    // h1.style.borderRadius = "12px"
+    // h1.style.display = "none"
+
+    // event listener
+    // h1.addEventListener("click", function(){
+    //     h1.innerHTML = "huhuhuhuhhuhue"
+    //     h1.style.color = "cyan"
+    // },false)
+
+    let h1 = document.querySelector('h1');
+    let btn = document.querySelector('button');
+
+    let currVal = 0;
+
+    btn.addEventListener('click', function(){
+        if(currVal == 0){
+            h1.style.backgroundColor = "yellow";
+            btn.innerHTML = "OFF";
+            currVal = 1;
+        }
+        else{
+            h1.style.backgroundColor = "whitesmoke";
+            btn.innerHTML = "ON";
+            currVal  = 0;
+        }
+        
+    })
+
+
+
+</script>
+
+</html>
