@@ -82,3 +82,44 @@
 </script>
 
 </html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulb On/Off Toggle</title>
+  <style>
+    #bulb {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: grey;
+      transition: background-color 0.3s ease;
+    }
+    #bulb.on {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="bulb"></div>
+  <button id="toggleButton">Turn On/Off</button>
+
+  <script>
+    // Get the elements
+    var bulb = document.getElementById('bulb');
+    var button = document.getElementById('toggleButton');
+
+    // Add event listener to the button
+    button.addEventListener('click', function() {
+      // Toggle the 'on' class to switch the bulb state
+      bulb.classList.toggle('on');
+    });
+  </script>
+
+</body>
+</html>
